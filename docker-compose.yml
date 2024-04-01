@@ -1,0 +1,18 @@
+version: '3'
+services:
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"  # Expose client port
+    depends_on:
+      - server  # Ensure server is started first
+
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"  # Expose server port
