@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 services:
   client:
     build:
@@ -8,7 +8,6 @@ services:
       - "5173:5173"  # Expose client port
     depends_on:
       - server  # Ensure server is started first
-
 
   server:
     build:

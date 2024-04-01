@@ -40,7 +40,6 @@ const NavBar = () => {
     const navLinks = (
         <>
             <li className="mr-1"><Link to='/'>Home</Link></li>
-            {/* <li className="mr-1"><Link to='/'>Habijabi</Link></li> */}
             <li className="mr-1"><Link to='/dashboard'>Dashboard</Link></li>
         </>
     );

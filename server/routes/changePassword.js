@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { User } = require("../models/user");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 // Middleware to authenticate and add user to request

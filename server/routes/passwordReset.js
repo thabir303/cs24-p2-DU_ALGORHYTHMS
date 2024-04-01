@@ -5,7 +5,7 @@ const crypto = require("crypto");
 const sendEmailVerification = require("../utils/sendEmail");
 const Joi = require("joi");
 const passwordComplexity = require("joi-password-complexity");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 // Initiate password reset process
 router.post("/reset-password/initiate", async (req, res) => {
